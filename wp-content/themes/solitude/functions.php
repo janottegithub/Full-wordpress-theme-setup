@@ -20,7 +20,7 @@ function load_stylesheets()
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 
-/* 
+
 
 function include_jquery()
 {
@@ -32,6 +32,7 @@ function include_jquery()
 }
 add_action('wp_enqueue_scripts', 'include_jquery');
 
+/*
 function load_js()
 {
    wp_enqueue_script('main_university-js', get_theme_file_uri('/js/scripts-bundled.js'), NULL, microtime(), true);

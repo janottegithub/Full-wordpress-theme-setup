@@ -1,7 +1,7 @@
 <?php
 function university_post_types(){
     register_post_type('event', array(
-        'supports' => array('title', 'editor', 'excerpt' ),
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'events'),
         'has_archive' => true,
         'public' => true,
@@ -13,7 +13,7 @@ function university_post_types(){
         'singular_name' => 'Event'
         ),
         'menu_icon' => 'dashicons-calendar'
-    ));
+    )); 
 }
 
 add_action('init', 'university_post_types');
@@ -23,7 +23,7 @@ add_action('init', 'university_post_types');
 
 function art_post_types(){
     register_post_type('art', array(
-        'supports' => array('title', 'editor', 'excerpt' ),
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'arts'),
         'has_archive' => true,
         'public' => true,
@@ -45,7 +45,7 @@ add_action('init', 'art_post_types');
 
 function music_post_types(){
     register_post_type('music', array(
-        'supports' => array('title', 'editor', 'excerpt' ),
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'music'),
         'has_archive' => true,
         'public' => true,

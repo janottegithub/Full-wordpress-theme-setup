@@ -64,9 +64,22 @@
              <?php the_content();?>
             </div>
 
+            <?php
+            
+                $relatedSubjects = get_field('related_subjects');
+
+                if($relatedSubjects){
+                    echo '<hr class="section-break">';
+                    echo '<h2 class="headline headline--medium">Line up</h2>';
+                    echo '<ul class="link-list min-list">';
+                    foreach($relatedSubjects as $music){?>
+                    <li><a href="<?php echo get_the_permalink($music);?>"><?php echo get_the_title($music);?></a></li>
+                    <? }
+                    echo '</ul>';
+                }
+            ?>
+
         </div>
-
-
     <?php  } ;?>
 
 

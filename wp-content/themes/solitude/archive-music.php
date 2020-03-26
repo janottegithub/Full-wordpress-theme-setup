@@ -4,7 +4,7 @@
         <div class="page-banner__bg-image" style="background-image: url('http://localhost:8000/wp-content/uploads/2020/03/giphy5.gif');  background-repeat: repeat; background-size:initial;"></div>
 
         <div class="page-banner__content container container--narrow">
-            <h1 class="page-banner__title">All Arts</h1>
+            <h1 class="page-banner__title">All Musicians</h1>
           <div class="page-banner__intro">
                 <p>see what is going on is our world.</p>
           </div>

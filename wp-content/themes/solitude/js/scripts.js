@@ -62,5 +62,3 @@ $(document).ready(function () {
     });
 
 });
-
-alert("Hello this is a test.");
