@@ -78,6 +78,11 @@
                      'compare' => '>=',
                      'value' => $today,
                      'type' => 'numeric'  
+                   ),
+                   array(
+                     'key' => 'related_subjects',
+                     'compare' => 'LIKE',
+                     'value' => '"'.get_the_ID().'"'
                    )
                )
             ));
@@ -88,7 +93,7 @@
                 echo '<ul class="link-list min-list">';
              $homepageEvents->the_post();?>
                 <div class="event-summary">
-                    <a href="#" class="event-summary__date t-center">
+                    <a href="<?php the_permalink();?>" class="event-summary__date t-center">
                         <span class="event-summary__month"><?php
                         $eventDate = new DateTime(get_field('event_date', false, false));
                         echo $eventDate->format('M');
@@ -106,7 +111,9 @@
                             echo get_the_excerpt();
                         } else {
                             echo wp_trim_words(get_the_content(), 18);
-                        } ?> <a href="<?php the_permalink()?>" class="nu gray">Learn more</a></p>
+                        } ?> 
+                        <br>
+                        <a href="<?php the_permalink()?>" class="nu gray">Learn more</a></p>
                     </div>
                 </div>
             <?php }
